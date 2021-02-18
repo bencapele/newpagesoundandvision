@@ -1,0 +1,133 @@
+/* banière haute avec menu */
+header {
+  background-color: #999;
+  display: flex;
+  align-items: center;
+}
+
+nav.menu-nav ul li.button{
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav.menu-nav ul li.button a{
+  color: #b67278;
+  text-decoration: none;
+  background-color: #e5ded5;
+  padding: 10px;
+}
+
+nav.menu-nav ul li.button:hover a{
+  color: #e5ded5;
+  background-color: #b67278;
+  transition: 0.4s all;
+}
+
+/* titre + texte */
+h1 {
+  color: #b67278;
+  font-size: 100px;
+  padding: 30px;
+  text-align: center;
+}
+
+h4 {
+  color: #77accc;
+  font-size: 30px;
+  padding: 10px;
+}
+
+p {
+  color: #c6cccf;
+  text-align: center;
+}
+
+body {
+  background-color: #77accc;
+  font-family: sans-serif;
+}
+
+summary{
+  font-family: sans-serif;
+  color: #999;
+}
+/* big card */
+.bigcard {
+  width: 0px auto;
+  margin: 0px auto;
+  background-color: #999;
+  box-shadow: 0px 5px 20px #999;
+}
+
+/* cards */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 90%;
+  margin: 50px auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap; 
+}
+
+.card{
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-body{
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* à mettre si j'aoute un bouton:
+.card-body .btn{
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  margin-top: 30px;
+  padding: 10px 5px; */
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0, 0.25);
+}
+
+/*media queries*/
+
+@media screen and (max-width:1000px){
+  .card{
+    width: 40%;
+  }
+}
+@media screen and (max-width:620px){
+  .container{
+    width: 40%;
+  }
+  .heading{
+    padding: 20px;
+    font-size: 20px;
+  }
+  .card {
+    width: 80%;
+  }
+}
