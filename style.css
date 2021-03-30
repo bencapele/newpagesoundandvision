@@ -4,6 +4,32 @@ header {
     background-color: #EDEFE7;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    height: 25vh;
+}
+
+footer {
+    background-color: #000000;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header img {
+    height: 90%;
+    border-radius: 10px;
+}
+
+#presentation {
+    width: 75vw;
+    margin: 20px auto;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px black;
 }
 
 nav.menu-nav ul li.button {
@@ -16,6 +42,7 @@ nav.menu-nav ul li.button a {
     text-decoration: none;
     background-color: #000000;
     padding: 10px;
+    border-radius: 10px;
 }
 
 nav.menu-nav ul li.button:hover a {
@@ -30,7 +57,12 @@ nav.menu-nav ul li.button:hover a {
 h1 {
     color: #ffde59;
     font-size: 100px;
-    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -46,7 +78,7 @@ p {
 }
 
 body {
-    background-color: #000000;
+    background-color: #EDEFE7;
     font-family: sans-serif;
 }
 
@@ -59,10 +91,11 @@ summary {
 /* big card */
 
 .bigcard {
-    width: 0px auto;
-    margin: 0px auto;
-    background-color: #EDEFE7;
-    box-shadow: 0px 5px 20px black;
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -74,29 +107,17 @@ summary {
     box-sizing: border-box;
 }
 
-.container {
-    width: 90%;
-    margin: 50px auto;
-}
-
 .heading {
     text-align: center;
     font-size: 30px;
     margin-bottom: 50px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
-}
-
 .card {
-    width: 20%;
+    width: 30%;
     background: #000000;
     border: 1px solid #ccc;
-    margin-bottom: 50px;
+    margin: 50px 0px;
     transition: 0.3s;
     border-radius: 10px;
 }
@@ -105,6 +126,16 @@ summary {
     padding: 30px 20px;
     text-align: center;
     font-size: 18px;
+}
+
+
+/* embedded content */
+
+.artNews {
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -119,7 +150,7 @@ summary {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0, 0.25);
+    box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0, 0.25);
 }
 
 
@@ -142,45 +173,4 @@ summary {
     .card {
         width: 80%;
     }
-}
-
-/* Links css */
-.links-ul  {
-  display: flex;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
-}
-
-.links-li {
-  background: blakc;
-  margin: 10px;
-  list-style: none;
-  font-size: 24px;
-  transition: 0.5s;
-}
-
-.links-a {
-  width : 60px;
-  padding: 16px; 0;
-  display: block;
-  color: #fff;
-}
-
-ul li:nth-child(1){
-  background: #e4405f;
-}
-
-ul li:nth-child(2){
-  background: #ff3300;
-}
-
-ul li:nth-child(3){
-  background: #1DB954;
-}
-
-ul li:nth-child(4){
-  background: white;
 }
