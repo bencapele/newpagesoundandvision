@@ -1,69 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Sound and Vision</title>
+    <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+</head>
 
-   <!-- haut de page -->
-    <header role="banner">
-      <img src="images/logo.png">
-      <nav class="menu-nav"> 
-         <ul> 
-         <li class="button">
-          <a href="index.html"> Home 
+<body>
+    <header>
+        <img src="images/logo.png">
+        <nav class="menu-nav">
+            <ul>
+                <li class="button">
+                    <a href="index.html"> Home
           </a>
-         </li>
-         <li class="button">
-          <a href="aboutus.html"> About us 
+                </li>
+                <li class="button">
+                    <a href="aboutus.html"> About us
           </a>
-         </li>
-         <li class="button">
-          <a href="contents.html"> Contents
+                </li>
+                <li class="button">
+                    <a href="contents.html"> Contents
           </a>
-         </li>
-         <li class="button">
-          <a href="playlists.html"> Playlists
+                </li>
+                <li class="button">
+                    <a href="playlists.html"> Playlists
           </a>
-         </li>
-         <li class="button">
-          <a href="artists.html"> Artists
+                </li>
+                <li class="button">
+                    <a href="artists.html"> Artists
           </a>
-         </li>
-         <li class="button">
-          <a href="shop.html"> Shop
+                </li>
+                <li class="button">
+                    <a href="shop.html"> Shop
           </a>
-         </li>
-         <li class="button">
-          <a href="links.html"> Links 
+                </li>
+                <li class="button">
+                    <a href="links.html"> Links
           </a>
-         </li>
-         <li class="button">
-          <a href="newsletter.html"> Newsletter 
+                </li>
+                <li class="button">
+                    <a href="newsletter.html"> Newsletter
           </a>
-         </li>
-         </ul>
-      </nav>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <form class="col-8 offset-2" action="userinformation" method="post">
-       <fieldset>
-        <p> <label for="firstname"> First name</label>
-        <input class="form-control" name="firstname" id="firstname"></p> 
+    <div id="presentation">
+        <div class="descriptiveText">
+            <h4>Subscribe to our Newsletter !</h4>
+            <p style="text-align: left;">If you want to keep informed about what's happening in the artistic sphere, you can subscribe to our newsletter.
+            </p>
+            <h5>What is it about ?</h5>
+            <p style="text-align: left;">With this newsletter, you'll receive once a week a 5 minutes long email containing weekly summaries about the new content, useful links to related articles, and a gallery selection by the team.
+            </p>
+            <h5>Why should I subscribe ?</h5>
+            <p style="text-align: left;">First of all, you'll have a non-intrusive newsletter that you'll only see on Friday Afternoon, to prepare yourself for the week-end.</p>
+            <p style="text-align: left;">We'll try our best to personalize this newsletter as much as we can, depeding on the information you give us: artistic events close to you, art types that interest you, etc.</p>
 
-        <p> <label for="lastname"> Last name </label> 
-        <input class="form-control" name="lastname" id="lastname"> </p> 
-
-        <p> <label for="password"> Email Adress </label>
-        <input class="form-control" name="password" id="email"> </p> 
-
-        <p> <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary"> Submit</button>
+            <h4> Convinced ? Join Sound&Vision by filling this form</h4>
         </div>
-       </fieldset>
-    </form> </p> 
-  </body>
+
+        <div class="informationForm">
+            <form class="formFrame" action="userinformation" method="get">
+                <fieldset>
+                    <p><strong> Newsletter Subscription Form</strong></p>
+                    <div class="fieldItem" id="flexSpace">
+                        <label for="firstname">Enter your first name: </label>
+                        <input type="text" name="name" id="name" placeholder="Albert" required>
+                    </div>
+                    <div class="fieldItem" id="flexSpace">
+                        <label for="lastname">Enter your last name: </label>
+                        <input type="text" name="name" id="name" placeholder="Einstein" required>
+                    </div>
+                    <div class="fieldItem" id="flexSpace">
+                        <label for="email">Enter your email: </label>
+                        <input type="email" name="email" id="email" placeholder="alberteinstein@hortmail.com" required>
+                    </div>
+                    <div class="fieldItem" id="flexSpace">
+                        <label for="cityChoice">What's the closest city from where you live?</label>
+                        <input list="nearestCity" id="cities" name="nearestCity">
+
+                        <datalist id="nearestCity">
+              <option value="Paris">
+              <option value="Marseille">
+              <option value="Bordeaux">
+              <option value="Lille">
+              <option value="Brest">
+              <option value="I prefer not to say">
+            </datalist>
+                    </div>
+
+                    <div class="fieldItem" id="flexSpace">
+                        <label for="topicChoice"> What are you interested in ?</label>
+                        <div id="flexAround">
+                            <p><input type="checkbox" name="topicChoice" value="sculp">Sculpture</p>
+                            <p><input type="checkbox" name="topicChoice" value="paint">Painting</p>
+                            <p><input type="checkbox" name="topicChoice" value="music">Music</p>
+                            <p><input type="checkbox" name="topicChoice" value="movies">movies</p>
+                            <p><input type="checkbox" name="topicChoice" value="photo">Photo</p>
+                            <p><input type="checkbox" name="topicChoice" value="all">All of them</p>
+                        </div>
+
+                    </div>
+
+                    <div class="fieldItem" id="flexRight">
+                        <input type="submit" value="Subscribe!">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Designed by Benjamin Capelle, Etienne Bock, Rodolphe Sauzey & Stanislas De Parades for <u>Sound&Vision</u> &copy;
+        </p>
+    </footer>
+</body>
+
 </html>
