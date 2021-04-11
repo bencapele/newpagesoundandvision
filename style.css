@@ -130,6 +130,13 @@ summary {
     margin-bottom: 50px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
 .card {
     width: 30%;
     background: #000000;
