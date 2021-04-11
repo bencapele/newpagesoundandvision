@@ -247,3 +247,44 @@ summary {
         width: 80%;
     }
 }
+
+/* Links css */
+.links-ul  {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.links-li {
+  background: blakc;
+  margin: 10px;
+  list-style: none;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.links-a {
+  width : 60px;
+  padding: 16px; 0;
+  display: block;
+  color: #fff;
+}
+
+ul li:nth-child(1){
+  background: #e4405f;
+}
+
+ul li:nth-child(2){
+  background: #ff3300;
+}
+
+ul li:nth-child(3){
+  background: #1DB954;
+}
+
+ul li:nth-child(4){
+  background: white;
+}
