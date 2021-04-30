@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="app.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -70,7 +71,7 @@
                     <p><strong> Newsletter Subscription Form</strong></p>
                     <div class="fieldItem" id="flexSpace">
                         <label for="firstname">Enter your first name: </label>
-                        <input type="text" name="name" id="name" placeholder="Albert" required>
+                        <input id="fName" type="text" name="name" id="name" placeholder="Albert" required>
                     </div>
                     <div class="fieldItem" id="flexSpace">
                         <label for="lastname">Enter your last name: </label>
@@ -82,7 +83,7 @@
                     </div>
                     <div class="fieldItem" id="flexSpace">
                         <label for="cityChoice">What's the closest city from where you live?</label>
-                        <input list="nearestCity" id="cities" name="nearestCity">
+                        <input id="city" list="nearestCity" id="cities" name="nearestCity">
 
                         <datalist id="nearestCity">
               <option value="Paris">
@@ -108,7 +109,7 @@
                     </div>
 
                     <div class="fieldItem" id="flexRight">
-                        <input type="submit" value="Subscribe!">
+                        <input onclick="confirmation()" type="button" value="Subscribe!">
                     </div>
 
                 </fieldset>
