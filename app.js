@@ -20,3 +20,8 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r){
 observer.observe()
 })
 
+function confirmation(){
+  var firstName = document.getElementById("fName").value
+  var city = document.getElementById("city").value
+  alert("Thank you " + firstName + "! See you soon near " + city + " for some artistic events, meetups, and even more !")
+}
