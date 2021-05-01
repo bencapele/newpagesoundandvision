@@ -39,7 +39,8 @@ function Reappear(id) {
 
     parent = x.parentNode;
     parent.removeAttribute("open");
-
+// permet de fermer l'élément details
+  
     z = document.getElementById(y);
     z.style.display = "block";
 
