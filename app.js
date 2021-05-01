@@ -25,3 +25,22 @@ function confirmation(){
   var city = document.getElementById("city").value
   alert("Thank you " + firstName + "! See you soon near " + city + " for some artistic events, meetups, and even more !")
 }
+
+function Disappear(id) {
+
+    x = document.getElementById(id);
+    x.style.display = "none";
+
+}
+
+function Reappear(id) {
+    x = document.getElementById(id);
+    y = x.className;
+
+    parent = x.parentNode;
+    parent.removeAttribute("open");
+
+    z = document.getElementById(y);
+    z.style.display = "block";
+
+}
