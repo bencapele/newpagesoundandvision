@@ -1,82 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Sound and Vision</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+    <script src="app.js" type="text/javascript">
+    </script>
+    <style>
+        details>summary {
+            list-style: none;
+        }
+        
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
 
-   <!-- haut de page -->
+<body>
+
+    <!-- haut de page -->
     <header role="banner">
-      <img src="images/logo.png">
-      <nav class="menu-nav"> 
-         <ul> 
-         <li class="button">
-          <a href="index.html"> Home 
+        <img src="images/logo.png">
+        <nav class="menu-nav">
+            <ul>
+                <li class="button">
+                    <a href="index.html"> Home 
           </a>
-         </li>
-         <li class="button">
-          <a href="aboutus.html"> About us 
+                </li>
+                <li class="button">
+                    <a href="aboutus.html"> About us 
           </a>
-         </li>
-         <li class="button">
-          <a href="contents.html"> Contents
+                </li>
+                <li class="button">
+                    <a href="contents.html"> Contents
           </a>
-         </li>
-         <li class="button">
-          <a href="playlists.html"> Playlists
+                </li>
+                <li class="button">
+                    <a href="playlists.html"> Playlists
           </a>
-         </li>
-         <li class="button">
-          <a href="artists.html"> Artists
+                </li>
+                <li class="button">
+                    <a href="artists.html"> Artists
           </a>
-         </li>
-         <li class="button">
-          <a href="shop.html"> Shop
+                </li>
+                <li class="button">
+                    <a href="shop.html"> Shop
           </a>
-         </li>
-         <li class="button">
-          <a href="links.html"> Links 
+                </li>
+                <li class="button">
+                    <a href="links.html"> Links 
           </a>
-         </li>
-         <li class="button">
-          <a href="newsletter.html"> Newsletter 
+                </li>
+                <li class="button">
+                    <a href="newsletter.html"> Newsletter 
           </a>
-         </li>
-         </ul>
-      </nav>
+                </li>
+            </ul>
+        </nav>
     </header>
-    
-    
-    
-        <!-- contenu en cards -->
+
+
+
+    <!-- contenu en cards -->
     <div class="bigcard">
         <div class="container">
             <div class="row">
                 <div class="card">
                     <div class="card-body">
                         <img src="images/Nils-Udo_profile picture.jpg" alt="Picture of Nils Udo" style="width:60%">
-                      <h4> Nils Udo, sans titre, 1993. </h4>
-                        <p>The artist starts from a simple principle: the walk.
-                            <details>
-                                <summary>see more ...</summary>
-                                <p> He uses this action in order to "lose himself" in nature and then makes an "arrangement" through an installation of which he then makes a photographic observation. Nils Udo uses different techniques: photography, drawing, painting, installation, sculpture with natural elements. Mixing ephemeral sculpture, precarious installation and large format photography, Nils-Udo’s works are produced in and with nature. Weathering and natural decay are an integral part of his creative process.
-                                </p>
-                            </details>
+                        <h4> Nils Udo, sans titre, 1993. </h4>
+                        <p>The artist starts from a simple principle: the walk.</p>
+                        <details id="details">
+                            <summary id="extend1" class="extend" onclick="Disappear(this.id)">► see more ...</summary>
+                            <p> He uses this action in order to "lose himself" in nature and then makes an "arrangement" through an installation of which he then makes a photographic observation. Nils Udo uses different techniques: photography, drawing, painting,
+                                installation, sculpture with natural elements. Mixing ephemeral sculpture, precarious installation and large format photography, Nils-Udo’s works are produced in and with nature. Weathering and natural decay are an integral
+                                part of his creative process.
+                            </p>
+                            </br>
+                            <button id="less1" class="extend1" onclick="Reappear(this.id)" style="font-size: 18px; background-color: transparent; color: white;border: none; cursor:pointer; overflow: hidden; font-family: sans-serif;">▲ See less</button>
+                        </details>
                     </div>
                 </div>
-               <div class="card">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/Slim Simon_profile picture.jpg" alt="Cover of SLim Guitar by Slim Simon" style="width:60%">
+                        <h4> Cover of SLim Guitar by Slim Simon. </h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images\Ronan Bouroullec_profile picture.jpg" alt="Picture of Ronan Bouroullec" style="width:60%">
+                        <h4> Ronan Bouroullec
+                        </h4>
+                        <p>Ronan Bouroullec's drawings follow the idea of the so-called intuitive drawing.</p>
+                        <details id="details">
+                            <summary id="extend2" class="extend" onclick="Disappear(this.id)">► see more ...</summary>
+                            <p>This technique allows him to develop new images and to reach the subconscious layers of the mind. Intuitive drawing is derived from the literary roots of surrealism and its automatic writing, which requires that the consciousness
+                                be completely extinguished while writing a text. This literary form has in turn influenced the content of many works by Surrealist artists and often results in meanders and flowing forms.
+                            </p>
+                            </br>
+                            <button id="less2" class="extend2" onclick="Reappear(this.id)" style="font-size: 18px; background-color: transparent; color: white;border: none; cursor:pointer; overflow: hidden; font-family: sans-serif;">▲ See less</button>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="images\Yoriyuki.png" alt="Picture of Ikegami Yoriyuki" style="width:60%">
+                            <h4> Ikegami Yoriyuki </h4>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="images\Sekou Bunch_profile picture.jpg" alt="Cover of Sekou Bunch" style="width:60%">
+                            <h4> Sekou Bunch </h4>
+                            <p>At the age of 8, Sekou’s first interest in the arts manifested itself in his work as a still-life and portrait artist.</p>
+                            <details id="details">
+                                <summary id="extend3" class="extend" onclick="Disappear(this.id)">► see more ...</summary>
+                                <p> One of his works, an oil painting of the Brooklyn Bridge, was chosen for display at the Metropolitan Museum of Art. But music had more of an impact on Sekou, especially the music of James Brown. Sekou and two of his brothers
+                                    started a dance review with the group name the Black Executives and began entering local talent contests. By the age of 14, with an upcoming career as a dancer and commercial artist, Sekou realized his destiny as a
+                                    musician and started playing the electric bass. At age 17, Sekou teamed up with GRP artist, Tom Browne and he recorded on Browne's album “Funkin for Jamaica.“ Sekou would later move to Los Angeles where he met the late
+                                    George Howard, who he toured and recorded a host of records with. Sekou then collaborated with producers Angela Winbush and Ronald Isley to record on Stephanie Mills’ hit “Something In The Way You Make Me Feel.” Sekou
+                                    was later hired as musical director for the Isley Brothers where he served with distinction for 11 years. Sekou is also a member of Quincy Jones’ “A Team” along with session musicians such as John "JR" Robinson, Greg
+                                    Phillinganes and Paul Jackson, Jr.</p>
+                                </br>
+                                <button id="less3" class="extend3" onclick="Reappear(this.id)" style="font-size: 18px; background-color: transparent; color: white;border: none; cursor:pointer; overflow: hidden; font-family: sans-serif;">▲ See less</button>
+
+                            </details>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="images\Karan Singh_profile picture.jpg" alt="Picture of Karan Singh" style="width:60%">
+                            <h4> Karan Singh </h4>
+                            <p>Karan Singh is an Australian artist and illustrator.</p>
+                            <details id="details">
+                                <summary id="extend4" class="extend" onclick="Disappear(this.id)">► see more ...</summary>
+                                <p> While he studied interaction design, the self-taught artist has focused on visual arts and illustration for the past twelve years, drawing inspiration from graphic design sensibilities and op-art minimalism. His bold and
+                                    vibrant work is a playful interpretation of minimalism particularly focusing on depth and dimension through pattern and repetition. His professional career has seen him based in Tokyo, New York, Malmö, Amsterdam, Sydney
+                                    and Melbourne. Select clients he has worked with include Instagram, IBM, Apple, Air Bnb, Nike and the band OK Go.
+                                </p>
+                                </br>
+                                <button id="less4" class="extend4" onclick="Reappear(this.id)" style="font-size: 18px; background-color: transparent; color: white;border: none; cursor:pointer; overflow: hidden; font-family: sans-serif;">▲ See less</button>
+
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="card">
                             <div class="card-body">
-                                <img src="images/Slim Simon_profile picture.jpg" alt="Cover of SLim Guitar by Slim Simon" style="width:60%">
-                              <h4> Cover of SLim Guitar by Slim Simon. </h4>
+                                <img src="images\Shibuya.jpeg" alt="Picture of Masafusa Shibuya" style="width:60%">
+                                <h4> Masafusa Shibuya </h4>
+
                             </div>
                         </div>
-          </div>
-          
-                                
-                  
-                  
-    </body>         
-    </html>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images\Emilio Cao_profile picture.jpg" alt="Cover of Emilio Cao" style="width:60%">
+                                <h4> Emilio Cao </h4>
+                                <p>Emilio Cao (b. 1953) was the first musician who recovered the harp as an instrument in the folk music in Spain.</p>
+                                <details id="details">
+                                    <summary id="extend5" class="extend" onclick="Disappear(this.id)">► see more ...</summary>
+                                    <p>His musical beginnings date back to the seventies, backing "Voices Ceibes" singers, a folk movement from Galicia in the 70s that included Bibiano or Benedicto. In 1977 he recorded his first album, "Fonte do Araño".
+                                        Beginning in 1983, and alternating the recording of their albums, he started composing soundtracks for theater and contemporary dance.</p>
+                                    </br>
+                                    <button id="less5" class="extend5" onclick="Reappear(this.id)" style="font-size: 18px; background-color: transparent; color: white;border: none; cursor:pointer; overflow: hidden; font-family: sans-serif;">▲ See less</button>
+                                </details>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="images\Ryuichi Sakamoto_profile picture.jpg" alt="Picture of Ryuichi Sakamoto" style="width:60%">
+                                <h4> Ryuichi Sakamoto </h4>
+                                <p>Ryuichi Sakamoto (born January 17, 1952 in Tokyo, Japan) is a Japanese musician, composer and actor.</p>
+                                <details id="details">
+                                    <summary id="extend6" class="extend" onclick="Disappear(this.id)">► see more ...</summary>
+                                    <p> Sakamoto studied at the Tokyo National University of Fine Arts and Music, where he graduated with a BA in composition, and a Master's degree with special emphasis electronic and ethnic music. Sakamoto began his career
+                                        in the late 1970s, working as a composer, arranger and producer with some of Japan's most popular rock, jazz and classical artists. He released his first solo album in 1978 but came to fame as a member of Japanese
+                                        synth-rock outfit Yellow Magic Orchestra with co-founders Haruomi Hosono and Yukihiro Takahashi. He collaborated with David Sylvian on a number of singles and most of Sylvian's albums. He appeared in the 1983 Nagisa
+                                        Oshima film Merry Christmas, Mr Lawrence alongside British rock singer David Bowie; he also wrote the film's musical score. He won the Academy Award for his score to the 1987 Bernardo Bertolucci film The Last Emperor.
+                                        He has also written soundtracks for Pedro Almodovar's film High Heels, and Oliver Stone's Wild Palms. Sakamoto was married to a Japanese pianist and singer Akiko Yano, collaborating with her on some of her recordings.
+                                        He is also known as a critic of copyright law, saying it is antiquated in the information age.
+                                    </p>
+                                    </br>
+                                    <button id="less6" class="extend6" onclick="Reappear(this.id)" style="font-size: 18px; background-color: transparent; color: white;border: none; cursor:pointer; overflow: hidden; font-family: sans-serif;">▲ See less</button>
+
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+</body>
+
+</html>
